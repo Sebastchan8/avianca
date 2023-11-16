@@ -1,4 +1,4 @@
-let URI = "http://localhost/avianca/Controller/userController.php";
+let URI = "http://192.168.0.50/avianca-master/Controller/userController.php";
 
 
 async function login(){

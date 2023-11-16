@@ -1,4 +1,4 @@
-let URI = "http://localhost/avianca/Controller/ticketController.php"
+let URI = "http://192.168.0.50/avianca-master/Controller/ticketController.php"
 
 // window.onload = function(){
 //     searchData();

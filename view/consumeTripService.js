@@ -1,4 +1,4 @@
-var URI = "http://localhost/avianca/Controller/tripController.php"
+var URI = "http://192.168.0.50/avianca-master/Controller/tripController.php"
 var htmlTable = "";
 
 
