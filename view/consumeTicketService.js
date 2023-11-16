@@ -64,7 +64,7 @@ async function searchData(){
         if(round){
             for(let i=0; i<data.length;i++){
                 htmlTable += '<tr>'+
-                                '<td>' + data[i].departureTrip.nombreAerolinea + ' <img src="' + data[i].departureTrip.imagenAerolinea + '" height="35px">' + '</td>'+
+                                '<td>' + data[i].departureTrip.nombreAerolinea + ' <img src="http://192.168.0.50/avianca-master/img/' + data[i].departureTrip.imagenAerolinea + '" height="35px">' + '</td>'+
                                 '<td>' + fromPlace + ' - ' + toPlace + '</td>'+
                                 '<td>' + data[i].departureTrip.fechaSalida + ' ' + data[i].departureTrip.horaSalida + '</td>'+
                                 '<td>' + data[i].returnTrip.fechaSalida + ' ' + data[i].returnTrip.horaSalida + '</td>'+
@@ -78,7 +78,7 @@ async function searchData(){
         }else{
             for(let i=0; i<data.length;i++){
                 htmlTable += '<tr>'+
-                                '<td>' + data[i].nombreAerolinea + ' <img src="' + data[i].imagenAerolinea + '" height="35px">' + '</td>'+
+                                '<td>' + data[i].nombreAerolinea + ' <img src="http://192.168.0.50/avianca-master/img/' + data[i].imagenAerolinea + '" height="35px">' + '</td>'+
                                 '<td>' + fromPlace + ' - ' + toPlace + '</td>'+
                                 '<td>' + data[i].fechaSalida + ' ' + data[i].horaSalida + '</td>'+
                                 '<td> --- </td>'+
@@ -115,8 +115,8 @@ async function buyTicket(departureFlight, returnFlight){
         },
         body: JSON.stringify(dataToModify),
     });
-    // let data = await serverAnswer.json();
-    // console.log(data);
+    let data = await serverAnswer.json();
+    console.log(data);
     alert("Compra exitosa!");
     location.reload();
 }
