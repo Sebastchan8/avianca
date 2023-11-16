@@ -86,7 +86,7 @@ async function searchData(){
                                 '<td>' + data[i].costoAdulto + '</td>'+
                                 '<td>' + data[i].costoNino + '</td>'+
                                 '<td>' + data[i].costo + '</td>'+
-                                '<td><button type="button" class="btn btn-success" onclick="buyTicket(' + data[0].idVuelo  + ', null)">Comprar</button></td>'+
+                                '<td><button type="button" class="btn btn-success" onclick="buyTicket(' + data[0].idVuelo  + ', ' + 0 + ')">Comprar</button></td>'+
                             '</tr>';
             }
         }

@@ -99,7 +99,7 @@
                 die("Error en la operación de Actualización");
             }
 
-            $sql = "INSERT INTO viajes VALUES($id,$departureFlight,$returnFlight,$adults,$kids)";
+            $sql = "INSERT INTO viajes VALUES(null,$id,$departureFlight,$returnFlight,$adults,$kids)";
 
             $preparedStatement = self::$connectedInstance->prepare($sql);
             if(!$preparedStatement->execute()){
