@@ -1,5 +1,5 @@
-let URI = "http://192.168.0.50/avianca-master/Controller/userController.php";
-
+import { serverIP } from './ip-config';
+let URI = `http://${serverIP}/avianca-master/Controller/userController.php`
 
 async function login(){
     let user = document.getElementById("user").value;
