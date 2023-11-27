@@ -64,7 +64,7 @@ async function searchData(){
         if(round){
             for(let i=0; i<data.length;i++){
                 htmlTable += '<tr>'+
-                                '<td>' + data[i].departureTrip.nombreAerolinea + ' <img src="http://192.168.0.50/avianca-master/img/' + data[i].departureTrip.imagenAerolinea + '" height="35px">' + '</td>'+
+                                '<td>' + data[i].departureTrip.nombreAerolinea + ' <img src="img/' + data[i].departureTrip.imagenAerolinea + '" height="35px">' + '</td>'+
                                 '<td>' + fromPlace + ' - ' + toPlace + '</td>'+
                                 '<td>' + data[i].departureTrip.fechaSalida + ' ' + data[i].departureTrip.horaSalida + '</td>'+
                                 '<td>' + data[i].returnTrip.fechaSalida + ' ' + data[i].returnTrip.horaSalida + '</td>'+
@@ -78,7 +78,7 @@ async function searchData(){
         }else{
             for(let i=0; i<data.length;i++){
                 htmlTable += '<tr>'+
-                                '<td>' + data[i].nombreAerolinea + ' <img src="http://192.168.0.50/avianca-master/img/' + data[i].imagenAerolinea + '" height="35px">' + '</td>'+
+                                '<td>' + data[i].nombreAerolinea + ' <img src="img/' + data[i].imagenAerolinea + '" height="35px">' + '</td>'+
                                 '<td>' + fromPlace + ' - ' + toPlace + '</td>'+
                                 '<td>' + data[i].fechaSalida + ' ' + data[i].horaSalida + '</td>'+
                                 '<td> --- </td>'+
