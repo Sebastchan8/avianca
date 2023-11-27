@@ -1,5 +1,4 @@
-import { serverIP } from './ip-config';
-let URI = `http://${serverIP}/avianca-master/Controller/tripController.php`
+let URI = `http://${window.appConfig.serverIP}/avianca-master/Controller/tripController.php`
 var htmlTable = "";
 
 

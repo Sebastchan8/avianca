@@ -1,5 +1,4 @@
-import { serverIP } from './ip-config';
-let URI = `http://${serverIP}/avianca-master/Controller/ticketController.php`
+let URI = `http://${window.appConfig.serverIP}/avianca-master/Controller/ticketController.php`
 
 // window.onload = function(){
 //     searchData();
@@ -116,8 +115,8 @@ async function buyTicket(departureFlight, returnFlight){
         },
         body: JSON.stringify(dataToModify),
     });
-    let data = await serverAnswer.json();
-    console.log(data);
+    // let data = await serverAnswer.json();
+    // console.log(data);
     alert("Compra exitosa!");
     location.reload();
 }

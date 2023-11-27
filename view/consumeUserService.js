@@ -1,5 +1,4 @@
-import { serverIP } from './ip-config';
-let URI = `http://${serverIP}/avianca-master/Controller/userController.php`
+let URI = `http://${window.appConfig.serverIP}/avianca-master/Controller/userController.php`;
 
 async function login(){
     let user = document.getElementById("user").value;
@@ -9,7 +8,7 @@ async function login(){
         return;
     }
     let serverAnswer = await fetch(URI + '?user=' + user + 
-                                            '&password=' + password);
+    '&password=' + password);
     let data = await serverAnswer.json();
     if(data == "" || data == null){
         alert("Credenciales incorrectas.");
